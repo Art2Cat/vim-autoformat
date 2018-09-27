@@ -81,7 +81,7 @@ if !exists('g:formatdef_clangformat')
 endif
 
 function! g:ClangFormatConfigFileExists()
-    return len(findfile(".clang-format", expand("%:p:h").";")) || len(findfile("_clang-format", expand("%:p:h").";"))
+    return len(findfile("~/Rorschach/.dotfile/.clang-format", expand("%:p:h").";")) || len(findfile(".clang-format", expand("%:p:h").";")) || len(findfile("_clang-format", expand("%:p:h").";"))
 endfunction
 
 
